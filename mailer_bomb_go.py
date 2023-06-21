@@ -31,10 +31,10 @@ def mailer_sender(sender, receiver, password__, subject, message_html, host__, p
         server.sendmail(
             sender_email, receiver_email, message.as_string()
         )
-    json_returner = {"mail":receiver_email, "response":"sent"}
+    json_returner = '{"mail":receiver_email, "response":"sent"}'
     return json_returner
 
-# 
+#
 # html__ = """\
   #  <html>
     #  <body>
